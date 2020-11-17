@@ -32,6 +32,20 @@
           style="height: 50px; width: 200px"
         />
       </a>
+      <div class="profile-pic1">
+        <a class="nav-link" href="#"
+          ><img
+            class="rounded-circle"
+            src="images/profilepic.png"
+            height="40px"
+            alt="profile image"
+          />
+        </a>
+      </div>
+      <div class="profile-name">
+        <p class="text-dark mt-3"><strong>Welcome</strong></p>
+        <p class="text-dark" style="margin-top: -15px">Asish Kumar</p>
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -67,11 +81,11 @@
               />
             </a>
           </li>
-          <li>
+          <li class="profile-pic">
             <p class="text-dark mt-3"><strong>Welcome</strong></p>
             <p class="text-dark" style="margin-top: -15px">Asish Kumar</p>
           </li>
-          <li>
+          <li class="login-button">
             <button
               class="btn btn-primary btn-md mt-3"
               style="border-radius: 20px; padding: 5px 20px"
@@ -119,14 +133,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#ImageCarousel" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#ImageCarousel" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
     </div>
 
     <!--Banner-->
@@ -135,38 +141,43 @@
         <div class="col-md-2 bg-primary">
           <p class="text-light text-center mt-3">Announcements</p>
         </div>
-        <div class="col-md-3.5">
-          <p class="text-primary text-center mt-3 ml-1">
-            <i class="fal fa-bullhorn" style="color: rgb(37, 196, 188)"> </i>
-            Change in residential form. please check
-            <span
-              class="bg-warning text-dark"
-              style="border-radius: 20px; padding: 3px 15px"
-            >
-              NEW</span
-            >
-          </p>
-        </div>
-        <div class="col-md-4.5">
-          <p class="text-primary text-center mt-3 ml-2">
-            <i class="fal fa-bullhorn" style="color: #31ccbf"> </i>
-            New Government policies for Residential Request
-            <span
-              class="text-dark ml-auto"
-              style="
-                background-color: tomato;
-                border-radius: 20px;
-                padding: 3px 15px;
-              "
-              >Important</span
-            >
-          </p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-primary mt-3 ml-2">
-            <i class="fal fa-bullhorn" style="color: #3fc7c7"></i>
-            Covid Alert
-          </p>
+        <div class="col-md-10">
+          <marquee direction="right">
+            <div class="col-md-3.5">
+              <p class="text-primary text-center mt-3 ml-1">
+                <i class="fal fa-bullhorn" style="color: rgb(37, 196, 188)">
+                </i>
+                Change in residential form. please check
+                <span
+                  class="bg-warning text-dark"
+                  style="border-radius: 20px; padding: 3px 15px"
+                >
+                  NEW</span
+                >
+              </p>
+            </div>
+            <div class="col-md-4.5">
+              <p class="text-primary text-center mt-3 ml-2">
+                <i class="fal fa-bullhorn" style="color: #31ccbf"> </i>
+                New Government policies for Residential Request
+                <span
+                  class="text-dark ml-auto"
+                  style="
+                    background-color: tomato;
+                    border-radius: 20px;
+                    padding: 3px 15px;
+                  "
+                  >Important</span
+                >
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="text-primary mt-3 ml-2">
+                <i class="fal fa-bullhorn" style="color: #3fc7c7"></i>
+                Covid Alert
+              </p>
+            </div>
+          </marquee>
         </div>
       </div>
     </div>
@@ -202,7 +213,7 @@
               style="background-color: rgba(39, 118, 163, 0.849)"
             >
               <div class="row d-flex p-4">
-                <img src="images/submit request_preview_rev_2.png" />
+                <img src="images/submit_request_preview_rev_2.png" />
                 <h4 class="ml-3 mt-3">
                   Submit Your <br />
                   Request
@@ -250,17 +261,19 @@
     <div class="container-fluid section2 my-4">
       <div class="row">
         <div class="col-md-4 mx-auto">
-          <div class="row content-item bg-light shadow-sm pl-3">
-            <div class="row d-flex flex-row p-4">
+          <div class="row content-item bg-light shadow-sm pl-3 mt-3">
+            <div class="row d-flex p-4">
               <img src="images/application1_preview_rev_1.png" />
               <h5 class="text-dark">Residential Request Form</h5>
             </div>
             <div class="row">
-              <p class="text-muted">
-                Its Long established fact that a reader will distracted by the
-                readable content on page.
-              </p>
-              <button class="btn btn-primary btn-md">Submit Request</button>
+              <div class="col-md-12">
+                <p class="text-muted">
+                  Its Long established fact that a reader will distracted by the
+                  readable content on page.
+                </p>
+                <button class="btn btn-primary btn-md">Submit Request</button>
+              </div>
             </div>
           </div>
           <div class="row content-item bg-light shadow-sm pl-3 mt-3">
@@ -269,33 +282,33 @@
               <h5 class="text-dark">New Development Request</h5>
             </div>
             <div class="row">
-              <p class="text-muted">
-                Its Long established fact that a reader will distracted by the
-                readable content on page.
-              </p>
-              <button class="btn btn-primary">Submit Request</button>
+              <div class="col-md-12">
+                <p class="text-muted">
+                  Its Long established fact that a reader will distracted by the
+                  readable content on page.
+                </p>
+                <button class="btn btn-primary">Submit Request</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-3 main-img">
-          <img
-            src="images/MiddleImage.jpg"
-            class="img-fluid"
-            style="width: 100%; height: 100%"
-          />
+          <img src="images/MiddleImage.jpg" />
         </div>
         <div class="col-md-4 mx-auto">
           <div class="row content-item bg-light shadow-sm pl-3">
-            <div class="row d-flex flex-row p-4">
+            <div class="row d-flex p-4">
               <img src="images/NewDevlopmentReq.jpg" />
               <h5 class="text-dark">Diversion Management Order</h5>
             </div>
             <div class="row">
-              <p class="text-muted">
-                Its Long established fact that a reader will distracted by the
-                readable content on page.
-              </p>
-              <button class="btn btn-primary btn-md">Submit Request</button>
+              <div class="col-md-12">
+                <p class="text-muted">
+                  Its Long established fact that a reader will distracted by the
+                  readable content on page.
+                </p>
+                <button class="btn btn-primary btn-md">Submit Request</button>
+              </div>
             </div>
           </div>
           <div class="row content-item bg-light shadow-sm pl-3 mt-3">
@@ -304,11 +317,13 @@
               <h5 class="text-dark">Submit Trouble Ticket</h5>
             </div>
             <div class="row">
-              <p class="text-muted">
-                Its Long established fact that a reader will distracted by the
-                readable content on page.
-              </p>
-              <button class="btn btn-primary btn-md">Submit Request</button>
+              <div class="col-md-12">
+                <p class="text-muted">
+                  Its Long established fact that a reader will distracted by the
+                  readable content on page.
+                </p>
+                <button class="btn btn-primary btn-md">Submit Request</button>
+              </div>
             </div>
           </div>
         </div>
@@ -319,7 +334,7 @@
     <div class="container-fluid part3 mt-3">
       <div class="row">
         <div
-          class="col-md-3 p-0 d-flex justify-content-center align-items-center"
+          class="col-lg-3 p-0 d-flex justify-content-center align-items-center"
           style="background-color: black; min-height: 200px"
         >
           <div class="main-text">
@@ -330,57 +345,57 @@
             </h1>
           </div>
         </div>
-        <div class="col-md-2 contentitem">
+        <div class="col-lg-2 contentitem">
           <img src="images/one.jpg" class="img-fluid" />
           <h5>Press Releases</h5>
-          <a href="">View More-></a>
+          <a href="">View-></a>
         </div>
-        <div class="col-md-2 contentitem">
+        <div class="col-lg-2 contentitem">
           <img src="images/press-release.jpg" class="img-fluid" />
           <h5>Notices</h5>
-          <a href="">View More-></a>
+          <a href="">View-></a>
         </div>
-        <div class="col-md-2 contentitem">
+        <div class="col-lg-2 contentitem">
           <img src="images/image-library.jpg" class="img-fluid" />
           <h5>Image Library</h5>
-          <a href="">View More-></a>
+          <a href="">View-></a>
         </div>
-        <div class="col-md-2 contentitem">
+        <div class="col-lg-2 contentitem">
           <img src="images/video-library.jpg" class="img-fluid" />
           <h5>Video Library</h5>
-          <a href="">View More-></a>
+          <a href="">View-></a>
         </div>
       </div>
     </div>
 
     <!--Help Center-->
-    <div class="helpcenter-header my-4">
-      <h3 class="mx-auto text-dark mb-2">Help Center</h3>
+    <div class="helpcenter-header">
+      <h3 class="text-dark">Help Center</h3>
     </div>
-    <div class="helpcenter container text-center mt-3">
+    <div class="helpcenter container">
       <div class="row">
         <div class="col-md-3">
-          <img src="images/generalinfo.jpg" class="img-fluid" />
+          <img src="images/generalinfo.jpg" />
           <div class="shadow-sm">
-            <h5 class="text-dark p-4">General Information</h5>
+            <h5>General Information</h5>
           </div>
         </div>
         <div class="col-md-3">
-          <img src="images/covid-19.jpg" class="img-fluid" />
+          <img src="images/covid-19.jpg" />
           <div class="shadow-sm">
-            <h5 class="text-dark p-4">Covid-19</h5>
+            <h5>Covid-19</h5>
           </div>
         </div>
         <div class="col-md-3">
-          <img src="images/Residential_premises.jpg" class="img-fluid" />
+          <img src="images/Residential_premises.jpg" />
           <div class="shadow-sm">
-            <h5 class="text-dark p-4">Residentail Premises</h5>
+            <h5>Residentail Premises</h5>
           </div>
         </div>
         <div class="col-md-3">
-          <img src="images/commercial_Trends.jpg" class="img-fluid" />
+          <img src="images/commercial_Trends.jpg" />
           <div class="shadow-sm">
-            <h5 class="text-dark p-4">Commercial Tenants</h5>
+            <h5>Commercial Tenants</h5>
           </div>
         </div>
       </div>

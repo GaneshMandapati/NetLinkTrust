@@ -12,12 +12,58 @@ body {
 }
 .nav-item{
   margin-top: 10px;
+  margin-left: 15px;
 }
  .nav-item a:hover {
   border-bottom: 3px solid rgba(21, 200, 206, 0.904);
    width: fit-content; 
  }
+ .profile-pic1{
+   display: none;
+ }
+ .profile-name {
+   display: none;
+ }
+@media screen and (max-width: 992px) {
+  .nav-item {
+    margin-left: 0px;
+  }
+  .profile-pic {
+    display: none;
+  }
+  .profile-pic1 {
+    display: block;
+    position:absolute;
+    right:0;
+    top:0;
+    margin-right: 160px;
+  }
+  .profile-name {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right:80px;
+  }
+  .login-button {
+  display: none;
+  }
 
+}
+
+@media screen and (max-width: 485px) {
+  .profile-name{
+   display: none;
+  }
+  .profile-pic1{
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .profile-pic1 {
+    display: none;
+  }
+}
 
 /* carousel */
 .carousel-caption {
@@ -25,7 +71,7 @@ body {
   transform: translateY(-20%);
 }
 
-#carousel-indicators li {
+.carousel-indicators li {
   margin-top: auto;
   height: 10px;
   width: 10px;
@@ -51,6 +97,9 @@ body {
     font-size: 11px;
   }
 }
+marquee div{
+  display: inline-block;
+}
 
 /*Section 1*/
 .section1 h1{
@@ -63,6 +112,8 @@ body {
   color: white;
   font-size: 25px;
 }
+
+
 
 .play-button-div {
   position: relative;
@@ -101,14 +152,21 @@ body {
 
 }
 
+@media screen and (max-width:400px) {
+ .play-button-div button{
+   margin:20px 0px;
+ }
+ .play-button-div h5 {
+   font-size: 0.8rem;
+   margin-top: 20px;
+ }
+ .play-button-div button {
+   margin-top: 20px;
+ }
+}
+
 /*Section 2*/
-.section2 div h5{
-  margin-top: 15px;
-  margin-left: 10px;
-}
-.section2 div p{
-  padding-left:15px;
-}
+
 .section2 div
 button {
   border-radius: 20px;
@@ -121,6 +179,14 @@ background-color: skyblue !important;
  }
 .main-img img{
   border-top: 2px solid rgba(21, 200, 206, 0.904);
+  width:100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1025px) {
+  .section2 h5 {
+    font-size: 20px!important;
+  }
 }
 
 /*striaght row*/
@@ -169,11 +235,39 @@ a {
 
 /*Helpcenter*/
 
-.helpcenter-header h3{
+/*.helpcenter-header h3{
    border-bottom: 3px solid rgba(21, 200, 206, 0.904);
    width: fit-content;
+}*/
+.helpcenter-header h3{
+  text-align: center;
+}
+.helpcenter-header h3 {
+  position: relative;
 }
 
+.helpcenter-header h3:before {
+  content: '';
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(58, 188, 211);
+  top:100%;
+}
+.helpcenter-header h3:after {
+  content: '';
+  width: 5px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(26, 186, 197);
+  top: 100%;
+  margin-left:-99px;
+ 
+}
+.helpcenter{
+  margin-top: 15px;
+  text-align: center;
+}
 .helpcenter h5 {
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #fff 50%, rgb(27, 189, 218) 50%);
@@ -186,14 +280,59 @@ a {
   background-position: 0 100%;
   color: #fff;
 }
-
+.helpcenter img{
+  width: 100%;
+}
+.helpcenter h5 {
+  color: black;
+  padding: 25px;
+}
 
 /*Footer*/
 .mainfooter .aboutus h6 {
-  border-bottom: 3px solid rgba(21, 200, 206, 0.904);
-  width: fit-content;
+  position: relative;
+}
+.mainfooter .aboutus h6:before {
+  content: '';
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(58, 188, 211);
+  top:100%;
+  left: 0;
+}
+.mainfooter .aboutus h6:after {
+  content: '';
+  width: 6px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(58, 188, 211);
+  top: 100%;
+  left: 42px;
 }
 
+.mainfooter .useful-links h4 {
+  position: relative;
+}
+
+.mainfooter .useful-links h4:before {
+  content: '';
+  width: 70px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(58, 188, 211);
+  top:100%;
+  left: 0;
+}
+.mainfooter .useful-links h4:after {
+  content: '';
+  width: 6px;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(58, 188, 211);
+  top: 100%;
+  left: 72px;
+}
 .mainfooter .footer-social li {
   margin: 5px 10px;
   border: 1px solid white;
@@ -208,11 +347,6 @@ a {
 .mainfooter .footer-social li:hover {
   cursor: pointer;
   background-color: rgb(29, 150, 190);
-}
-
-.mainfooter .useful-links h4 {
-  border-bottom: 3px solid rgba(21, 200, 206, 0.904);
-  width: fit-content;
 }
 
 .mainfooter .useful-links li a {
