@@ -14,9 +14,26 @@ body {
   margin-top: 10px;
   margin-left: 15px;
 }
- .nav-item a:hover {
-  border-bottom: 3px solid rgba(21, 200, 206, 0.904);
-   width: fit-content; 
+.nav-item a{
+  position: relative;
+}
+ .nav-item a:hover:before {
+  position: absolute;
+  content: '';
+  width: calc(75% - 5px);
+  height: 2px;
+  background: rgb(58, 188, 211);
+  left: 10px;
+  top: 80%;
+ }
+ .nav-item a:hover:after{
+   position: absolute;
+   content: '';
+   width: 13%;
+   height: 2px;
+   background:rgb(58, 188, 211);
+   right: 0px;
+   top: 80%;
  }
  .profile-pic1{
    display: none;
@@ -49,6 +66,17 @@ body {
   display: none;
   }
 
+  .nav-item a:hover:before {
+    left: 0;
+  }
+  .nav-item a:hover:after {
+    right: 5px;
+  }
+  .nav-item a:hover {
+    width: fit-content;
+  }
+  
+
 }
 
 @media screen and (max-width: 485px) {
@@ -72,10 +100,15 @@ body {
 }
 
 .carousel-indicators li {
-  margin-top: auto;
   height: 10px;
   width: 10px;
   border-radius: 100%;
+}
+.carousel-indicators .active {
+  background-color: rgb(61, 156, 219);
+  height: 10px;
+  width: 40px;
+  border-radius: 12px 12px 12px 12px;
 }
 @media screen and (max-width: 544px) {
   .carousel-caption h1 {
@@ -84,6 +117,15 @@ body {
   .carousel-caption p {
     font-size: 40px;
   }
+}
+@media screen and (max-width: 320px) {
+   .carousel-caption h1 {
+     font-size: 40px;
+   }
+
+   .carousel-caption p {
+     font-size: 30px;
+   }
 }
 
 
@@ -102,6 +144,7 @@ marquee div{
 }
 
 /*Section 1*/
+
 .section1 h1{
   color: white;
   float:right;
@@ -170,13 +213,35 @@ marquee div{
 .section2 div
 button {
   border-radius: 20px;
-  padding: 5px 20px;
+  padding: 8px 20px;
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
- .section2 .content-item:hover{
-background-color: skyblue !important;
+.section2 div h5{
+  margin-top: 15px;
+}
+.section2 div img {
+  margin-right: 20px;
+}
+.section2 .content-item{
+  background-color: white;
+}
+.section2 .content-item p{
+  color: rgb(85, 84, 84);
+}
+ .section2 .content-item:hover {
+  background-color: #279ed8;
+  
  }
+.section2 .content-item:hover p{
+color:white;
+}
+.section2 .content-item:hover .btn {
+  color: black;
+  font-weight: 500;
+  background-color:white ;
+}
+ 
 .main-img img{
   border-top: 2px solid rgba(21, 200, 206, 0.904);
   width:100%;
@@ -188,7 +253,6 @@ background-color: skyblue !important;
     font-size: 20px!important;
   }
 }
-
 /*striaght row*/
 .part3 {
   background-image: url("../images/helpcenter2.jpg");
@@ -196,6 +260,29 @@ background-color: skyblue !important;
   height: 100%;
   text-align: center;
   margin-top: -150px;
+}
+.part3 .main-text h1{
+  position: relative;
+}
+.part3 .main-text h1::before{
+  content: '';
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  background-color:white;
+  top:100%;
+  margin-top:10px;
+
+}
+.part3 .main-text h1::after{
+content: '';
+width: 5px;
+height: 2px;
+position: absolute;
+background-color:white;
+top:100%;
+margin-top:10px;
+margin-left: -75px;
 }
 .contentitem h5 {
   color: black;
@@ -235,11 +322,8 @@ a {
 
 /*Helpcenter*/
 
-/*.helpcenter-header h3{
-   border-bottom: 3px solid rgba(21, 200, 206, 0.904);
-   width: fit-content;
-}*/
 .helpcenter-header h3{
+  margin-top: 20px;
   text-align: center;
 }
 .helpcenter-header h3 {
@@ -248,24 +332,27 @@ a {
 
 .helpcenter-header h3:before {
   content: '';
-  width: 50px;
-  height: 4px;
+  width: 30px;
+  height: 2px;
   position: absolute;
   background-color: rgb(58, 188, 211);
   top:100%;
+  margin-left:50px;
+  margin-top: 15px;
 }
 .helpcenter-header h3:after {
   content: '';
   width: 5px;
-  height: 4px;
+  height: 2px;
   position: absolute;
   background-color: rgb(26, 186, 197);
   top: 100%;
-  margin-left:-99px;
- 
+  margin-left:-69px;
+ margin-top: 15px;
 }
 .helpcenter{
-  margin-top: 15px;
+  margin-top:40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .helpcenter h5 {
@@ -294,44 +381,50 @@ a {
 }
 .mainfooter .aboutus h6:before {
   content: '';
-  width: 40px;
-  height: 4px;
+  width: 35px;
+  height: 2px;
   position: absolute;
   background-color: rgb(58, 188, 211);
   top:100%;
   left: 0;
+   margin:10px 0px;
 }
 .mainfooter .aboutus h6:after {
   content: '';
   width: 6px;
-  height: 4px;
+  height: 2px;
   position: absolute;
   background-color: rgb(58, 188, 211);
   top: 100%;
-  left: 42px;
+  left: 38px;
+  margin:10px 0px;
 }
-
-.mainfooter .useful-links h4 {
+.mainfooter .aboutus p{
+  margin: 30px 0px;
+}
+.mainfooter .useful-links h6 {
   position: relative;
 }
 
-.mainfooter .useful-links h4:before {
+.mainfooter .useful-links h6:before {
   content: '';
-  width: 70px;
-  height: 4px;
+  width: 35px;
+  height: 2px;
   position: absolute;
   background-color: rgb(58, 188, 211);
   top:100%;
   left: 0;
+  margin:10px 0px;
 }
-.mainfooter .useful-links h4:after {
+.mainfooter .useful-links h6:after {
   content: '';
   width: 6px;
-  height: 4px;
+  height: 2px;
   position: absolute;
   background-color: rgb(58, 188, 211);
   top: 100%;
-  left: 72px;
+  left: 37px;
+  margin:10px 0px;
 }
 .mainfooter .footer-social li {
   margin: 5px 10px;
@@ -352,10 +445,20 @@ a {
 .mainfooter .useful-links li a {
   text-decoration: none;
 }
+.mainfooter .main-flex-box ul{
+  margin: 5px 0px;
+}
+.mainfooter .main-flex-box ul li{
+  margin: 10px 0px;
+}
 
 @media screen and (max-width:405px) {
   .useful-links .main-flex-box {
     display: flex;
     flex-direction: column;
   }
+}
+
+.mainfooter .copyright-text{
+  margin: 65px 0px;
 }
