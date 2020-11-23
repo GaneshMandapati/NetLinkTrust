@@ -400,7 +400,11 @@ a {
   margin:10px 0px;
 }
 .mainfooter .aboutus p{
+  font-size: 14px;
   margin: 30px 0px;
+}
+.mainfooter .aboutus p span{
+  display: block;
 }
 .mainfooter .useful-links h6 {
   position: relative;
