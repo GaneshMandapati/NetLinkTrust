@@ -183,7 +183,7 @@ marquee div{
 .play-button-div h5 {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 65%;
   transform: translate(-50%, -50%);
 }
 
@@ -195,16 +195,16 @@ marquee div{
 
 }
 
-@media screen and (max-width:400px) {
- .play-button-div button{
-   margin:20px 0px;
- }
+@media screen and (max-width:512px) {
+  .play-button-div .play-button-icon{
+    top:50px
+  }
  .play-button-div h5 {
+   top:100px;
    font-size: 0.8rem;
-   margin-top: 20px;
  }
  .play-button-div button {
-   margin-top: 20px;
+   margin-top: 10px;
  }
 }
 
