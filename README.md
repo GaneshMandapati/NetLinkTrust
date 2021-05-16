@@ -1,23 +1,21 @@
-It is a clone of Netlink Trust site. I developed it using HTML,CSS,Bootstrap
-
-![Screenshot (9)](https://user-images.githubusercontent.com/43996741/118396701-4e39ca00-b66e-11eb-807b-36905bb93cf0.png)
-![Screenshot (10)](https://user-images.githubusercontent.com/43996741/118396695-4bd77000-b66e-11eb-8ece-0abd391ef070.png)
-![Screenshot (11)](https://user-images.githubusercontent.com/43996741/118396697-4d089d00-b66e-11eb-857d-ea670989fa0f.png)
-![Screenshot (12)](https://user-images.githubusercontent.com/43996741/118396698-4da13380-b66e-11eb-9e4b-e0ce3eb5be25.png)
-![Screenshot (13)](https://user-images.githubusercontent.com/43996741/118396700-4e39ca00-b66e-11eb-838f-78e0a7b01734.png)
-
-
-
-(https://user-images.githubusercontent.com/43996741/118396550-a91ef180-b66d-11eb-9374-7e939cab8690.png)
-
-(https://user-images.githubusercontent.com/43996741/118396565-ba67fe00-b66d-11eb-8525-8712a147660f.png)
-
-(https://user-images.githubusercontent.com/43996741/118396580-c9e74700-b66d-11eb-800a-765ae5564ade.png)
-
-(https://user-images.githubusercontent.com/43996741/118396603-dec3da80-b66d-11eb-9892-906c0b2a98c7.png)
-
-(https://user-images.githubusercontent.com/43996741/118396617-ebe0c980-b66d-11eb-9a4a-17668a89aed7.png)
-
-
+It is a clone of Netlink Trust site. I developed it using HTML,CSS,Bootstrap.
 
 Live Demo: https://ganeshmandapati.github.io/NetLinkTrust.github.io/
+
+*Used Bootstrap Navbar to make Navigation bar and Bootstrap Carousel to make slider
+![Screenshot (16)](https://user-images.githubusercontent.com/43996741/118396806-d8822e00-b66e-11eb-886d-594dbf518da4.png)
+
+*Announcements sections using Bootstrap Grid and Marquee Tag
+![Screenshot (10)](https://user-images.githubusercontent.com/43996741/118396695-4bd77000-b66e-11eb-8ece-0abd391ef070.png)
+
+*used Bootstrap Grid
+![Screenshot (15)](https://user-images.githubusercontent.com/43996741/118396803-d6b86a80-b66e-11eb-9dd2-839d92359f27.png)
+
+*used Bootstrap Grid to display cards
+![Screenshot (12)](https://user-images.githubusercontent.com/43996741/118396698-4da13380-b66e-11eb-9e4b-e0ce3eb5be25.png)
+
+*Used CSS Flexbox to make footer
+![Screenshot (14)](https://user-images.githubusercontent.com/43996741/118396807-d91ac480-b66e-11eb-939e-83f1ce6d58a2.png)
+
+
+
